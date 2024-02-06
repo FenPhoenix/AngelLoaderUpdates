@@ -1,7 +1,5 @@
 This is a test changelog for fictional v1.7.10.
 
-This should be in Markdown eventually, for bolding the section headers.
-
 Features and improvements:
  - Added a cool new feature
   - This is a second-level item
