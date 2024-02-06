@@ -1,0 +1,9 @@
+Features and improvements:
+ - Added in-app updater. You will be asked once if you want to enable checking for updates on startup. If update checking is enabled and an update is available, a button will appear in the top bar. If you disable update checking on startup, you can still check manually through the main menu.
+ - Tooltips with lengthy text now stick around longer (as long as Windows allows, about 32 seconds).
+
+Fixes:
+ - When the path to AngelLoader contained non-ASCII characters, the game would be unable to load the stub, causing FMs not to load and possibly other issues.
+ - Tab control scroll buttons are now themed correctly in dark mode.
+ - When closing the app when the readme is fullscreen, the FMs list position is now also no longer lost.
+ - Fixed a crash when the readme was fullscreened and the FMs list was refreshed.
