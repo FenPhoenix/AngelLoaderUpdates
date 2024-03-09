@@ -1,0 +1,9 @@
+Features and improvements:
+ - Added a screenshot tab. If an FM is installed and has screenshots, you can view them, change their gamma, and copy them to the clipboard (in gamma-changed form).
+ - Tabs can now be displayed at the top-right, bottom-right, or both. This is to allow better use of screen space in this era of widescreen and ultra-widescreen monitors.
+ - Added tooltips for audio conversion settings checkboxes.
+
+Fixes:
+ - Dialog boxes were sometimes returning an "OK" result when closed by clicking their window's X button or by pressing Escape. They now return "Cancel" in this case.
+ - Scanner error log message might say "fm is 7z" when it was actually rar.
+ - Fixed a longstanding edge case when dragging tabs to change their order, if you dragged really fast it could sometimes mess up the tab order.
