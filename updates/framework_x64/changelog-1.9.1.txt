@@ -1,0 +1,3 @@
+Fixes:
+ - Fixed regression: In dark mode, the FM tabs' menus and other dropdowns were still light themed.
+ - Fixed: When the UI was disabled (eg. while scanning), and Follow System Theme was selected and the system theme changed from light to dark, the readme would get into a state where it was disabled and light themed, and would stay disabled permanently.
