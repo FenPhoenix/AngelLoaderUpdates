@@ -1,0 +1,13 @@
+Features and improvements:
+ - Per-FM play time is now tracked and displayed in the new Play Time column.
+ - All date columns now sort descending on first click.
+ - Progress box now widens if necessary to accomodate long strings (one less thing for localizers to worry about).
+
+Performance:
+ - Greatly improved efficiency of filtering code.
+
+Fixes:
+ - If The Dark Mod was running an FM, and you clicked "Play" on another TDM FM, it would try to run the non-TDM FM installer code and fail with an error dialog.
+ - When playing The Dark Mod without an FM, the stub comm file would still be written, even though TDM doesn't use it.
+ - Fixed not-quite-correct logic for detecting if the OS supports dark themed title bars.
+ - Fixed when two FMs have the exact same comment text and you switch between them, the Comment tab textbox vertical scroll position would not be reset back to the top. Unlikely to occur in real use but hey.
