@@ -1,0 +1,3 @@
+Fixes:
+ - When the top tab area was empty, it would have a border whose size matched the area of the bottom tab area, even if the top tab area was a different size.
+ - The Mods tab could cut off parts of its controls if shrunk too small.
