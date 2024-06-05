@@ -1,0 +1,12 @@
+Fixes:
+ - Play Time was being displayed incorrectly when greater than 24 hours.
+ - The Screenshots tab will no longer reset the selected screenshot to the latest one right before playing an FM.
+ - Scanner was sometimes scanning script readmes when it should have ignored them entirely and scanned FM-related readmes only.
+ - Fixed tab order in Settings -> Appearance.
+
+Scanner/rtf:
+ - Relaxed rtf header detection slightly - now matches the RichTextBox internal behavior.
+ - Rtf parser can now handle arbitrary number of nested groups.
+ - Improved rtf parser performance.
+ - Various small accuracy improvements in rtf parser.
+ - Scanner now converts non-ASCII dashes and quotes (smart quotes etc.) to ASCII equivalents, so as not to trip up search filtering.
