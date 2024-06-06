@@ -1,0 +1,2 @@
+Fixes:
+ - Play Time hours are now always displayed again even if they're 0, for clarity
