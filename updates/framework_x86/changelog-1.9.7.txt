@@ -1,0 +1,30 @@
+Performance:
+ - Added support for multithreaded disk I/O. How much benefit you'll get from this depends on what kind of drives you have. Spinning hard drives get no multithreading as that makes them slower; SSDs get a performance increase of 4x or more for multi-FM scans; and if your SSD is able to handle it, you can try the aggressive threading mode for turbocharged FM install speed. This last one is the most salient improvement, but unfortunately you need a certain level of SSD to get the benefit. What level that is I'm not 100% sure; at least some lower priced SATA SSDs see performance tank under the write load, and I'm guessing lower-priced NVMe drives may have the same problem. But, it not being feasible for me to buy and test every drive under the sun, we'll just have to settle for it being a manual option only for now. Try it, and if your FM installations get faster instead of catastrophically slow, then great!
+ - Improved performance of wav file "bitness" checking when converting wavs to 16 bit.
+
+General:
+ - In the Settings -> Paths page, the archive paths section has been moved up, to just below the game paths section. This aligns more with its relative importance, and makes it more visible to first-time users.
+ - File and folder dialogs now have specific titles related to the task you're doing, so if you're choosing a Thief 2 executable it will say so in the title, rather than just a generic "Open".
+
+Accessibility:
+ - Settings window page buttons now have a more visible color scheme; it's now easier to tell which button is selected.
+ - Settings window page buttons now display a selection outline in dark mode when selected with the keyboard.
+ - In dark mode, checkboxes and radio buttons now have a more visible color when checked, similar to the Windows 11 default style.
+ - In dark mode, checkboxes and radio buttons now display a selection outline when selected with the keyboard.
+ - On Windows 11, tooltips are now persistent (they don't time out).
+ - Fixing Microsoft's blunders:
+  - On Windows 11 in light mode, three-state checkboxes are now rendered in a way that makes it easier to tell the difference between "checked" and "indeterminate".
+  - We now override the ridiculous Windows 11 scroll bars with older-style ones that can actually be seen.
+
+Scanner:
+ - Improved character encoding detection for certain non-ASCII FM titles.
+
+Fixes:
+ - Fixed edge case in FM backup where it could try to move a DarkLoader saves backup file to the "Original DarkLoader saves backup" folder when there was already a file with that name there. It now adds a number to the filename to get rid of the conflict.
+ - If an FM has no data to back up, an empty backup archive will no longer be created.
+ - Fixed uncharacteristically lax error handling in uninstall and backup code in general.
+ - Fixed regression: Screenshots tab now enables/disables properly again.
+ - When progress box is wider than default, Cancel button now remains centered.
+ - Some FMs have HTML readmes that reference external files (images, CSS, etc.). Previously, these external files would only be extracted to the readme cache for zip and non-solid rar archives. They are now cached for all supported archive types (zip, rar, solid rar, 7z).
+ - When installing zip FMs, empty folders in the zip file were not extracted. That caused no actual issues in practice but it was technically incorrect, so it's fixed now.
+ - When the Add Tag dropdown was open and you hovered the mouse over the FMs list and used the arrow keys, the FMs list would take the input rather than the Add Tag dropdown, and the Add Tag dropdown would remain open.
