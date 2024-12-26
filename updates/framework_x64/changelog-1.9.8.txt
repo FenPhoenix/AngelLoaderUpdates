@@ -1,7 +1,0 @@
-Fixes:
- - Fixed a potential race condition in threaded read/write zip FM installation when the zip file has duplicate entries.
- - When the bottom tab area was collapsed and you entered and exited fullscreen readme mode, the bottom tab area button would be slightly nudged over to the right until clicked.
- - Tooltips in the Settings window were still being given a timeout value on Windows 11.
-
-Performance:
- - Scanner and rtf parser performance improvements.
