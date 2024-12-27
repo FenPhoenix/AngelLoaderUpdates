@@ -1,0 +1,2 @@
+Fixes:
+ - Fixed app crash after several seconds when file stream throws with file not found
