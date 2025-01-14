@@ -1,0 +1,2 @@
+ - Disabled mods and languages are now passed to DromEd/ShockEd
+ - AngelLoader can now take full advantage of speed-optimized 7z files, scanning them up to 11x faster (standard 7z files see little to no improvement)
