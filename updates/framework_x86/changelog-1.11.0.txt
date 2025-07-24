@@ -1,0 +1,17 @@
+General:
+ - Updated audio conversion options for NewDark 1.28 to address its new format support and its fixing of the 16-bit bug.
+ - Audio files will no longer be backed up or restored for differential backups. This ensures converted audio files won't waste space in the backup file, nor overwrite files of other formats on install.
+
+Fixes when running on Linux via Wine or Proton:
+ - Fixed rtf readmes would still have a bright background in dark mode.
+ - Fixed readme selection dropdown would close before you had time to select an item.
+ - Fixed pin icons in front of pinned FM titles showed up as unknown character glyphs.
+ - Fixed scroll bars were not always themed properly in dark mode.
+ - Fixed DateTimePickers were not themed properly in dark mode.
+ - Fixed progress bars were not themed properly in dark mode.
+ - Fixed several visual and layout glitches.
+ - Added missing character encodings on Wine, which fixes a crash on clicking the character encoding button.
+ - For the best experience on Linux, some tweaks to your prefix are required. Added instructions to the readme about how to set them up. Read the instructions here: https://github.com/FenPhoenix/AngelLoader/blob/master/README.md#running-on-linux
+
+Fixes:
+ - Recent FMs were always being displayed in the list even when they should have been filtered out. This caused at least one user confusion when several FMs seemed to disappear from the list (the "recent" time period expired).
