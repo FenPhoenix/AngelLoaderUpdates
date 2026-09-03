@@ -1,0 +1,19 @@
+General:
+ - Added support for TGA and PCX format screenshots, thus completing support for all formats any of the games can write out.
+ - Reduced memory usage when a screenshot is loaded.
+
+RTF:
+ - The way RTF readmes were patched up to fix character encoding was not correct, and worked only due to luck and the particulars of the implementation logic. The correct method has now been implemented.
+ - The above fix had a very positive cascading effect on performance of the RTF readme patch-up process.
+ - RTF parsers are updated to the latest ReasonableRTF code for a large performance increase.
+
+Scanner:
+ - Title scan now tries to get the title with the best casing (eg. "A Benevolent Master" not "A benevolent Master").
+ - Title can now be read from the archive name when it conforms to the Thief Guild standard format (https://www.thiefguild.com/topics/108869/the-thief-guild-fm-hosting-is-ready).
+ - Unicode character U+00B4 is now converted to ASCII single-quote, matching intended behavior.
+ - For NewDark 1.28+ FMs, game type can now be detected from the new "Mission Game" byte, which makes game detection near-instant.
+
+Fixes:
+ - Fixed plus/minus/zero keys would zoom the Update window even when Ctrl wasn't held.
+ - GLML files now support character encoding detection and changing - this fixes broken non-ASCII characters in GLML files.
+ - If you started the app and the mouse cursor was not over the window and the displayed FM had multiple readmes, the readme chooser dropdown would be visible even though the mouse was not over the readme, until you moved the mouse over the window.
