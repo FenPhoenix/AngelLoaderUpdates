@@ -1,0 +1,7 @@
+ - FMs list sorting now uses a multicore algorithm when the FMs list is sufficiently large, greatly improving performance with very large FM lists.
+ - When sorting pinned and recent FMs to the top of the list, a very inefficient algorithm was used, causing a potentially huge performance drop when many FMs were pinned or recent. These FMs are now sorted to the top as part of the normal sort process, removing this performance cliff.
+ - Due to these improvements, sorting and filtering performance (including typing text in the filter boxes) can now be maintained at a usable level for at least 25,000 FMs on my Ryzen 5600.
+ - Fixed: Author, comment, archive, and disabled mods sorting were not fully deterministic when multiple FMs had the same value.
+ - Recent-at-top FMs now sort descending, which makes more sense for "recent" sorting. The fact they sorted ascending before may have been an oversight.
+ - Fixed broken link for ImageFormats in the About window.
+ - Temporary config file modifications are now reset on game close, rather than only on app exit, for a tidier footprint.

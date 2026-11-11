@@ -1,0 +1,2 @@
+Fixes:
+ - With NewDark 1.28, game config flags (new mantle, post-processing, subtitles, etc.) were no longer being passed and were causing FMs not to load
